@@ -8,7 +8,7 @@ const Navbar = () => {
 
 const [navbarOpen, setNavbarOpen] = useState({open:false, css: 'collapse navbar-collapse' })
 const [links, setLinks] = useState([{id:1, path : '/',text : 'home'},
-                                    {id:2, path : '/about', text : 'about'},
+                                    {id:2, path : '/collection', text : 'collection'},
                                     ])
 // const [css, setCss] = useState('collapse navbar-collapse ')
 

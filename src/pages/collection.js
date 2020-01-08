@@ -5,21 +5,23 @@ import SEO from "../components/seo"
 
 import BackgroundSection from '../components/globals/BackgroundSection'
 import Info from '../components/home/Info'
+import Contact from '../components/home/Contact'
 
 const IndexPage = ( { data }) => (
     <Layout>
-        <SEO title="Home" />
+        <SEO title="Collection" />
         <BackgroundSection 
         img={data.img.childImageSharp.fluid}
-        title="DKK ECommerce "
-        styleClass="default-background"
+        title="collection"
+        styleClass="collection-background"
         />
         <Info />
+        <Contact />
     </Layout>
 ) 
 export const query = graphql`
 query {
-  img: file(relativePath: { eq: "default-background.jpg" }) {
+  img: file(relativePath: { eq: "collection-background.jpg" }) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_tracedSVG

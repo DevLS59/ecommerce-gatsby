@@ -15,7 +15,10 @@ body {
     font-family : Verdana, Geneva, Tahoma, sans-serif ! important;
 
 }
-
+h1 {
+    font-size : 6rem !important;
+    text-shadow : 4px 4px 10px rgba(0,0,0, 1);
+}
 .text-orange {
     color : var(--mainorange)
 }
@@ -26,7 +29,7 @@ body {
     font-size : 1.8rem;
     margin-top : 0.5rem;
 }
-.default-background {
+.default-background, .collection-background {
     min-height : 100vh;
     display : flex;
     align-items: center;
@@ -34,6 +37,11 @@ body {
     background-repeat : no-repeat;
     background-size : cover;
     background-position : center 
+}
+
+.collection-background{
+    min-height : 70vh;
+    
 }
 
 .btn-orange {

@@ -5,7 +5,7 @@ export default function Title({title}) {
 
         <div className="row">
             <div className="col text-center mb-3">
-                <h1 className="display-4 font-weight-bold"> {title} </h1>
+                <h2 className="display-4 font-weight-bold"> {title} </h2>
             </div>>
         </div>
     )
